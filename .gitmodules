@@ -1,0 +1,3 @@
+[submodule "novasgo"]
+	path = novasgo
+	url = https://github.com/rh-codebase/novasgo

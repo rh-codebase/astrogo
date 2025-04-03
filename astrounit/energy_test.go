@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/rh-codebase/astrogo/testhelpers"
+	th "github.com/rh-codebase/genutilsgo"
 )
 
 func TestNewEnergy(t *testing.T) {
@@ -13,8 +13,8 @@ func TestNewEnergy(t *testing.T) {
 		fmt.Println("Error NewEnergy. Expected nil, Got ", err)
 		t.Fail()
 	}
-	testhelpers.CheckF(t, e.Value, 12.23, "Value Error")
-	testhelpers.CheckS(t, e.UnitString(), "kJ", "Unit Error")
+	th.CheckF(t, e.Value, 12.23, "Value Error")
+	th.CheckS(t, e.UnitString(), "kJ", "Unit Error")
 	//fmt.Println(e.Value, " ", e.UnitString())
 }
 

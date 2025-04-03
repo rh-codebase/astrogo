@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	th "github.com/rh-codebase/astrogo/testhelpers"
+	th "github.com/rh-codebase/genutilsgo"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	th "github.com/rh-codebase/astrogo/testhelpers"
+	th "github.com/rh-codebase/genutilsgo"
 )
 
 func TestReadCatalog(t *testing.T) {
@@ -80,6 +80,5 @@ func TestSourceNameCase(t *testing.T) {
 		th.CheckFT(t, s.RA.Hour().Value, 18.717252777777777, 1e-6, "Value Error")
 		th.CheckFT(t, s.DEC.Degree().Value, -71.42811111111111, 1e-6, "Value Error")
 		th.CheckFT(t, s.Magnitude, 4.01, 1e-6, "Value Error")
-		//fmt.Println("zetpav: ", s)
 	}
 }

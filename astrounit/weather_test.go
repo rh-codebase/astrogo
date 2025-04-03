@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	th "github.com/rh-codebase/astrogo/testhelpers"
+	th "github.com/rh-codebase/genutilsgo"
 )
 
 func TestWaterSaturatedPressure(t *testing.T) {
